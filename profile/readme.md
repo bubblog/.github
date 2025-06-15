@@ -1,44 +1,79 @@
-## 🫧 Bubblog - Personalized Blog AI Chatbot
+# 🫧 Bubblog - Personalized Blog AI Chatbot
+**"글이 대화가 되는 블로그"**
+**Bubblog**은 사용자의 블로그 콘텐츠를 기반으로 **개인화된 AI 챗봇**을 생성하여, 블로그 방문자와 자연스럽고 지능적인 대화를 가능하게 하는 플랫폼입니다.  
 
-Bubblog은 사용자의 블로그 콘텐츠를 기반으로, 맞춤형 AI 챗봇을 생성해 방문자와 소통할 수 있게 해주는 플랫폼입니다. 단순한 블로그를 넘어, 나만의 디지털 페르소나를 구축할 수 있는 새로운 웹 경험을 제공합니다.
+---
 
-⸻
+## 📌 프로젝트 개요
 
-### 📌 프로젝트 개요
-	•	주제: 개인 블로그 콘텐츠 기반 AI 챗봇 시스템
-	•	목표: 블로그 글을 벡터 기반 검색증강 RAG(Retrieval-Augmented Generation)를 활용해 구축한 챗봇을 제공해, 방문자와 지능적인 대화가 가능하도록 구현
-	•	활용: 카테고리, 태그 기반 필터링 / SSE 기반 실시간 응답 / 사용자별 챗봇 비교 분석 등
+- **주제**: 개인 블로그 기반 AI 챗봇 시스템  
+- **목표**: 블로그 글을 임베딩하고, RAG(Retrieval-Augmented Generation) 기반 AI 챗봇을 통해 방문자와 자연스러운 대화를 제공  
+- **주요 기능**:
+  - 카테고리·태그 기반 콘텐츠 필터링
+  - SSE 기반 실시간 스트리밍 응답
+  - 사용자별 챗봇 성능 비교 및 성장 분석
 
-⸻
+---
 
-👥 팀 소개
+## 👥 팀 소개
 
-이름	역할	주요 업무
+| 이름 | 역할 | 주요 업무 |
+|------|------|-----------|
+| [<img src="https://github.com/chan000518.png" width="20"/> **이승찬**](https://github.com/chan000518) | 팀장 / 백엔드·프론트 | 아키텍처 설계, Spring Boot API 개발, CI/CD, Next.js 기반 UI 개발, AI 서버 개발 및 배포, 벡터 DB 구축 |
+| [<img src="https://github.com/mdy3722.png" width="20"/> **문덕영**](https://github.com/mdy3722) | 팀원 / 백엔드 | Spring Boot API 개발 및 배포, Redis 구성, AWS S3 연동 |
+| [<img src="https://github.com/ekdnlt714714.png" width="20"/> **박의찬**](https://github.com/ekdnlt714714) | 팀원 / AI 서버 | 챗봇 서버 개발, 프롬프트 엔지니어링 |
 
+---
 
-⸻
+## 🧱 시스템 구조
 
-🧱 시스템 구조
+```plaintext
+User
+ │
+ ▼
+Frontend (Next.js)
+ │
+ ▼
+Backend (Spring Boot) ──────────────┐
+ │                                  │
+ ▼                                  ▼
+DB (PostgreSQL + pgvector) ─ AI Server (FastAPI)
+                                 │
+                                 ▼
+                   Embedding Model + OpenAI API
+````
 
-User ──> Frontend (Next.js)
-               │
-               ▼
-      Backend (Spring Boot) ──> DB (PostgreSQL + pgvector)
-               │
-               ▼
-          AI Server (FastAPI) ──> DB (PostgreSQL + pgvector)  Embedding Model + OpenAI API
+* **인증 및 블로그 관리**: Spring Boot
+* **챗봇 응답 및 유사도 검색**: FastAPI + RAG 구조
+* **벡터 저장 및 검색**: PostgreSQL + pgvector
 
-	•	인증 및 블로그 관리: Spring Boot
-	•	AI 챗봇 응답 처리: FastAPI + RAG 구조
-	•	DB: PostgreSQL, pgvector
+---
 
-⸻
+## 🛠 기술 스택
 
-🛠 기술 스택
+| 영역      | 사용 기술                                  |
+| ------- | -------------------------------------- |
+| 프론트엔드   | Next.js, TypeScript, Tailwind CSS      |
+| 백엔드     | Spring Boot, JPA, PostgreSQL, Redis    |
+| AI 서버   | FastAPI, OpenAI API, pgvector          |
+| 인증      | JWT                                    |
+| 배포 및 운영 | Docker, Nginx, AWS EC2, GitHub Actions |
 
-영역	스택
-프론트엔드	Next.js, TypeScript, Tailwind CSS
-백엔드	Spring Boot, JPA, PostgreSQL, Redis
-AI 서버	FastAPI, OpenAI API, pgvector, Faiss
-인증	JWT, OAuth2 (구글 로그인)
-배포 및 운영	Docker, Nginx, EC2, GitHub Actions CI/CD
+---
+
+## 📂 레포지토리 구조
+
+| 영역    | 링크                                                                    |
+| ----- | --------------------------------------------------------------------- |
+| 프론트엔드 | 🔗 [bubblog-frontend](https://github.com/bubblog/bubblog-FE)   |
+| 백엔드   | 🔗 [bubblog-backend](https://github.com/bubblog/bubblog-BE)     |
+| AI 서버 | 🔗 [bubblog-ai-server](https://github.com/bubblog/bubblog-AI) |
+
+---
+
+## 📢 주요 특징 요약
+
+* 📚 **블로그 글 기반 자동 임베딩 처리 및 검색**
+* 🧠 **OpenAI와 연동된 RAG 구조 챗봇**
+* 🧵 **SSE 기반 실시간 응답 처리**
+* 🏷 **카테고리·태그 기반 필터링 및 대화 맥락 반영**
