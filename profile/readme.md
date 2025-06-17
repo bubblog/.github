@@ -1,7 +1,8 @@
 # 🫧 Bubblog - Personalized Blog AI Chatbot
 **"글이 대화가 되는 블로그"**
 
-**Bubblog**은 사용자의 블로그 콘텐츠를 기반으로 **개인화된 AI 챗봇**을 생성하여, 대화를 통해 블로그 내용을 탐색할 수 있는 상호작용형 블로그 플랫폼
+**Bubblog**은 사용자의 블로그 콘텐츠를 기반으로 **개인화된 AI 챗봇**을 생성하여, 
+대화를 통해 블로그 내용을 탐색할 수 있는 상호작용형 블로그 플랫폼
 
 ---
 
@@ -18,31 +19,14 @@
 
 ## 👥 팀 소개
 
-| 이름 | 역할 | 주요 업무 |
-|------|------|-----------|
-| [<img src="https://github.com/chan000518.png" width="20"/> **이승찬**](https://github.com/chan000518) | 팀장 / 백엔드·프론트 | 아키텍처 설계, Spring Boot API 개발, CI/CD, Next.js 기반 UI 개발, AI 서버 개발 및 배포, 벡터 DB 구축 |
-| [<img src="https://github.com/mdy3722.png" width="20"/> **문덕영**](https://github.com/mdy3722) | 팀원 / 백엔드 | Spring Boot API 개발 및 배포, Redis 구성, AWS S3 연동 |
-| [<img src="https://github.com/ekdnlt714714.png" width="20"/> **박의찬**](https://github.com/ekdnlt714714) | 팀원 / AI 서버 | 챗봇 서버 개발, 프롬프트 엔지니어링 |
-
----
+| ![이승찬](https://github.com/chan000518.png?size=60) <br> [**이승찬**](https://github.com/chan000518) | ![문덕영](https://github.com/mdy3722.png?size=60) <br> [**문덕영**](https://github.com/mdy3722) | ![박의찬](https://github.com/ekdnlt714714.png?size=60) <br> [**박의찬**](https://github.com/ekdnlt714714) |
+|------------------|------------------|------------------|
+| 팀장 / 백엔드·프론트 | 팀원 / 백엔드 | 팀원 / AI 서버 |
+| - 아키텍처 설계 <br> - Spring Boot API 개발 <br> - CI/CD <br> - Next.js 기반 UI 개발 <br> - AI 서버 개발 및 배포 <br> - 벡터 DB 구축 | - Spring Boot API 개발 및 배포 <br> - Redis 구성 <br> - AWS S3 연동 | - 챗봇 서버 개발 <br> - 프롬프트 엔지니어링 |
 
 ## 🧱 시스템 구조
 
-```plaintext
-User
- │
- ▼
-Frontend (Next.js)
- │
- ▼
-Backend (Spring Boot) ──────────────┐
- │                                  │
- ▼                                  ▼
-DB (PostgreSQL + pgvector) ─ AI Server (FastAPI)
-                                 │
-                                 ▼
-                   Embedding Model + OpenAI API
-````
+![시스템 아키텍처](docs/시스템아키텍쳐.jpg)
 
 * **인증 및 블로그 관리**: Spring Boot
 * **챗봇 응답 및 유사도 검색**: FastAPI + RAG 구조
@@ -62,7 +46,7 @@ DB (PostgreSQL + pgvector) ─ AI Server (FastAPI)
 
 ---
 
-## 📂 레포지토리 구조
+## 📂 레포지토리 주소
 
 | 영역    | 링크                                                                    |
 | ----- | --------------------------------------------------------------------- |
@@ -71,10 +55,3 @@ DB (PostgreSQL + pgvector) ─ AI Server (FastAPI)
 | AI 서버 | 🔗 [bubblog-ai-server](https://github.com/bubblog/bubblog-AI) |
 
 ---
-
-## 📢 주요 특징 요약
-
-* 📚 **블로그 글 기반 자동 임베딩 처리 및 검색**
-* 🧠 **OpenAI와 연동된 RAG 구조 챗봇**
-* 🧵 **SSE 기반 실시간 응답 처리**
-* 🏷 **카테고리·태그 기반 필터링 및 대화 맥락 반영**
