@@ -21,8 +21,8 @@
 
 | ![이승찬](https://github.com/chan000518.png?size=60) <br> [**이승찬**](https://github.com/chan000518) | ![문덕영](https://github.com/mdy3722.png?size=60) <br> [**문덕영**](https://github.com/mdy3722) | ![박의찬](https://github.com/ekdnlt714714.png?size=60) <br> [**박의찬**](https://github.com/ekdnlt714714) |
 |------------------|------------------|------------------|
-| 팀장 / 백엔드·프론트 | 팀원 / 백엔드 | 팀원 / AI 서버 |
-| - 아키텍처 설계 <br> - Spring Boot API 개발 <br> - CI/CD <br> - Next.js 기반 UI 개발 <br> - AI 서버 개발 및 배포 <br> - 벡터 DB 구축 | - Spring Boot API 개발 및 배포 <br> - Redis 구성 <br> - AWS S3 연동 | - 챗봇 서버 개발 <br> - 프롬프트 엔지니어링 |
+| 팀장 / 백엔드·프론트·AI 서버 | 팀원 / 백엔드 | 팀원 / AI 서버 |
+| - 아키텍처 설계 <br> - Spring Boot API 개발 <br> - CI/CD <br> - Next.js 기반 UI 개발 <br> - AI 서버 개발 및 배포 <br> - 벡터 DB 구축 | - 아키텍처 설계 <br> - Spring Boot API 개발 및 배포 <br> - Redis 구성 <br> - AWS S3 연동 | - 챗봇 서버 개발 <br> - 프롬프트 엔지니어링 |
 
 ## 🧱 시스템 구조
 
@@ -55,3 +55,7 @@
 | AI 서버 | 🔗 [bubblog-ai-server](https://github.com/bubblog/bubblog-AI) |
 
 ---
+
+## 위키 주소
+🔗 [위키](https://github.com/bubblog/.github/wiki)
+
