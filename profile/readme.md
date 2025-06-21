@@ -25,7 +25,6 @@
 | - 아키텍처 설계 <br> - Spring Boot API 개발 <br> - CI/CD <br> - Next.js 기반 UI 개발 <br> - AI 서버 개발 및 배포 <br> - 벡터 DB 구축 | - 아키텍처 설계 <br> - Spring Boot API 개발 및 배포 <br> - Redis 구성 <br> - AWS S3 연동 | - 챗봇 서버 개발 <br> - 프롬프트 엔지니어링 |
 
 ## 🧱 시스템 구조
-
 ![시스템 아키텍처](docs/시스템아키텍쳐.jpg)
 
 * **인증 및 블로그 관리**: Spring Boot
