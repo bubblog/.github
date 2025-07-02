@@ -33,6 +33,11 @@
 
 ---
 
+## 💾 ERD (Entity Relationship Diagram)
+![ERD](docs/bubblog-ERD.png)
+
+---
+
 ## 🛠 기술 스택
 
 | 영역      | 사용 기술                                  |
