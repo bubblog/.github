@@ -43,10 +43,41 @@
 | 영역      | 사용 기술                                  |
 | ------- | -------------------------------------- |
 | 프론트엔드   | Next.js, TypeScript, Tailwind CSS      |
-| 백엔드     | Spring Boot, JPA, PostgreSQL, Redis    |
+| 백엔드     | Spring Boot, JPA, QueryDSL, PostgreSQL, Redis    |
 | AI 서버   | FastAPI, OpenAI API, pgvector          |
 | 인증      | JWT                                    |
 | 배포 및 운영 | Docker, Nginx, AWS EC2, GitHub Actions |
+| 이미지 관리 | AWS S3                                    |
+
+---
+
+## 🖼️ 서비스 UI
+
+<details>
+<summary><b>UI 모아보기</b></summary>
+  
+- **랜딩 페이지**  
+  ![랜딩 페이지](docs/bubblog-landingPage.png)
+
+- **메인 페이지**  
+  ![메인 페이지](docs/bubblog-MainPage.png)
+
+- **게시글 상세 페이지**  
+  ![게시글 상세 페이지](docs/bubblog-게시글%20상세.png)
+
+- **특정 사용자 블로그 방문 페이지**  
+  ![사용자 페이지(docs/bubblog-Mypage.png)
+
+- **마이페이지 - 챗봇 말투 설정**  
+  ![마이페이지](docs/챗봇말투%20설정.png)
+
+- **글 작성 페이지**  
+  ![글 작성 페이지](docs/bubblog-글작성.png)
+
+- **챗봇 페이지**  
+  ![챗봇 페이지](docs/bubblog-chatbot.png)
+  
+</details>
 
 ---
 
