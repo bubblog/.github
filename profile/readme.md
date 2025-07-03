@@ -63,10 +63,10 @@
   ![메인 페이지](docs/bubblog-MainPage.png)
 
 - **게시글 상세 페이지**  
-  ![게시글 상세 페이지](docs/bubblog-게시글%20상세.png)
+  ![게시글 상세 페이지](docs/bubblog-%20게시글%20상세.png)
 
 - **특정 사용자 블로그 방문 페이지**  
-  ![사용자 페이지(docs/bubblog-Mypage.png)
+  ![사용자 페이지](docs/bubblog-Mypage.png)
 
 - **마이페이지 - 챗봇 말투 설정**  
   ![마이페이지](docs/챗봇말투%20설정.png)
